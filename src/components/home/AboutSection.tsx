@@ -1,8 +1,10 @@
 import {
   Box,
+  Card,
   Container,
   Typography,
 } from "@mui/material";
+import { QRCodeSVG } from "qrcode.react";
 
 import { useTranslation } from "react-i18next";
 
@@ -30,9 +32,20 @@ export default function AboutSection() {
         },
       }}
     >
-      <Container maxWidth="lg">
+      <Container
+        maxWidth="lg"
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: {
+            xs: 4,
+            md: 6,
+          },
+        }}
+      >
         <Box
           sx={{
+            order: 2,
             display: "grid",
 
             gridTemplateColumns: {
@@ -188,6 +201,74 @@ export default function AboutSection() {
             </Box>
           </Box>
         </Box>
+
+        <Card
+          elevation={0}
+          sx={{
+            order: 1,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 4,
+            width: "100%",
+            p: {
+              xs: 2.5,
+              md: 3,
+            },
+            backgroundColor:
+              darkTheme.palette.background.paper,
+            border: `1px solid ${darkTheme.palette.divider}`,
+            borderRadius: "24px",
+            flexDirection: {
+              xs: "column",
+              sm: "row",
+            },
+          }}
+        >
+          <Box>
+            <Typography
+              component="h3"
+              sx={{
+                mb: 1,
+                color:
+                  darkTheme.palette.primary
+                    .contrastText,
+                fontSize: {
+                  xs: "1.35rem",
+                  md: "1.55rem",
+                },
+                fontWeight: 700,
+              }}
+            >
+              {t("about.qrTitle")}
+            </Typography>
+            <Typography
+              sx={{
+                color:
+                  darkTheme.palette.text.secondary,
+                lineHeight: 1.7,
+              }}
+            >
+              {t("about.qrDescription")}
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              flexShrink: 0,
+              p: 1.5,
+              backgroundColor: "#ffffff",
+              borderRadius: "12px",
+            }}
+          >
+            <QRCodeSVG
+              value="https://lerlinglink.space/"
+              size={140}
+              level="H"
+              title={t("about.qrTitle")}
+            />
+          </Box>
+        </Card>
       </Container>
     </Box>
   );

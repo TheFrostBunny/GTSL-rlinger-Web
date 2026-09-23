@@ -63,14 +63,14 @@
     "title": "Om oss",
     "description": "Lær mer om vårt oppdrag og team.",
     "heading": "En enklere vei fra skole til arbeidsliv.",
+    "qrTitle": "Åpne Lærling Link",
+    "qrDescription": "Skann QR-koden med mobilen for å komme rett til appen.",
     "student": "Elev",
     "company": "Bedrift"
   },
   "goals": {
     "title": "Våre mål",
     "heading": "Vi gjør veien til læreplass enklere.",
-    "qrTitle": "Åpne Lærling Link",
-    "qrDescription": "Skann QR-koden med mobilen for å komme rett til appen.",
     "items": {
       "first": {
         "title": "Enklere vei til læreplass",
