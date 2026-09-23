@@ -69,6 +69,8 @@
   "goals": {
     "title": "Our goals",
     "heading": "We make the path to an apprenticeship easier.",
+    "qrTitle": "Open Lærling Link",
+    "qrDescription": "Scan the QR code with your phone to go straight to the app.",
     "items": {
       "first": {
         "title": "An easier path to an apprenticeship",

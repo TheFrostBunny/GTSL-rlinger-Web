@@ -26,6 +26,7 @@
     "graphql-ws": "~5.16.0",
     "i18n": "^0.15.4",
     "i18next": "^26.4.2",
+    "qrcode.react": "^4.2.0",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
     "react-i18next": "17.0.14",

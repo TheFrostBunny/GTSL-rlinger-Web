@@ -69,6 +69,8 @@
   "goals": {
     "title": "Våre mål",
     "heading": "Vi gjør veien til læreplass enklere.",
+    "qrTitle": "Åpne Lærling Link",
+    "qrDescription": "Skann QR-koden med mobilen for å komme rett til appen.",
     "items": {
       "first": {
         "title": "Enklere vei til læreplass",
