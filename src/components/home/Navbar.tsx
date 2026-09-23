@@ -225,8 +225,8 @@ const Navbar = () => {
             </Button>
 
             <Box
-              component={Link}
-              to="/login"
+              component="a"
+              href="https://lerlinglink.space/"
               sx={{
                 ml: 1,
 

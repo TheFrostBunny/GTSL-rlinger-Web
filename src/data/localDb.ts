@@ -1,4 +1,4 @@
-import seedStudents from "./students.json";
+import seedStudents from "../students.json";
 import type { DemoStudent } from "./types";
 
 const STORAGE_KEY = "demo-students";
