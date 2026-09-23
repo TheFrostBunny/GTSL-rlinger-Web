@@ -115,73 +115,6 @@ export default function GoalsSection() {
 
             gridTemplateColumns: {
               xs: "1fr",
-
-        <Card
-          elevation={0}
-          sx={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: 4,
-            mt: 3,
-            p: {
-              xs: 3,
-              md: 4,
-            },
-            backgroundColor:
-              darkTheme.palette.background.paper,
-            border: `1px solid ${darkTheme.palette.divider}`,
-            borderRadius: "24px",
-            flexDirection: {
-              xs: "column",
-              sm: "row",
-            },
-          }}
-        >
-          <Box>
-            <Typography
-              component="h3"
-              sx={{
-                mb: 1,
-                color:
-                  darkTheme.palette.primary
-                    .contrastText,
-                fontSize: {
-                  xs: "1.35rem",
-                  md: "1.55rem",
-                },
-                fontWeight: 700,
-              }}
-            >
-              {t("goals.qrTitle")}
-            </Typography>
-            <Typography
-              sx={{
-                color:
-                  darkTheme.palette.text.secondary,
-                lineHeight: 1.7,
-              }}
-            >
-              {t("goals.qrDescription")}
-            </Typography>
-          </Box>
-
-          <Box
-            sx={{
-              flexShrink: 0,
-              p: 1.5,
-              backgroundColor: "#ffffff",
-              borderRadius: "12px",
-            }}
-          >
-            <QRCodeSVG
-              value="https://lerlinglink.space/"
-              size={160}
-              level="H"
-              title={t("goals.qrTitle")}
-            />
-          </Box>
-        </Card>
               md: "repeat(2, 1fr)",
             },
 
@@ -275,6 +208,73 @@ export default function GoalsSection() {
             </Card>
           ))}
         </Box>
+
+        <Card
+          elevation={0}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            gap: 4,
+            mt: 3,
+            p: {
+              xs: 3,
+              md: 4,
+            },
+            backgroundColor:
+              darkTheme.palette.background.paper,
+            border: `1px solid ${darkTheme.palette.divider}`,
+            borderRadius: "24px",
+            flexDirection: {
+              xs: "column",
+              sm: "row",
+            },
+          }}
+        >
+          <Box>
+            <Typography
+              component="h3"
+              sx={{
+                mb: 1,
+                color:
+                  darkTheme.palette.primary
+                    .contrastText,
+                fontSize: {
+                  xs: "1.35rem",
+                  md: "1.55rem",
+                },
+                fontWeight: 700,
+              }}
+            >
+              {t("goals.qrTitle")}
+            </Typography>
+            <Typography
+              sx={{
+                color:
+                  darkTheme.palette.text.secondary,
+                lineHeight: 1.7,
+              }}
+            >
+              {t("goals.qrDescription")}
+            </Typography>
+          </Box>
+
+          <Box
+            sx={{
+              flexShrink: 0,
+              p: 1.5,
+              backgroundColor: "#ffffff",
+              borderRadius: "12px",
+            }}
+          >
+            <QRCodeSVG
+              value="https://lerlinglink.space/"
+              size={160}
+              level="H"
+              title={t("goals.qrTitle")}
+            />
+          </Box>
+        </Card>
       </Container>
     </Box>
   );
